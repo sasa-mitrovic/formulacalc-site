@@ -1,0 +1,3 @@
+# Ignore everything the site does not need. This repo is public.
+Thumbs.db
+.DS_Store

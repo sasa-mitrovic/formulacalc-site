@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formulair</title>
+<meta name="description" content="A perfumery formulation notebook for Windows and Android.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #1b1d1a;
+    --ink-soft: #55605a;
+    --ground: #f7f6f2;
+    --card: #ffffff;
+    --edge: #dfded6;
+    --accent: #2f5f4e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8eae5;
+      --ink-soft: #a2ada6;
+      --ground: #141614;
+      --card: #1c1f1c;
+      --edge: #2e332e;
+      --accent: #8fc7b0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 64px 0 80px; }
+  h1 { font-size: 2.1rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .tagline { color: var(--ink-soft); font-size: 1.1rem; margin: 0 0 40px; }
+  h2 { font-size: 1.05rem; margin: 40px 0 12px; letter-spacing: 0.02em; text-transform: uppercase; color: var(--ink-soft); }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--edge);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 8px;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 56px; padding-top: 20px;
+    border-top: 1px solid var(--edge);
+    color: var(--ink-soft); font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Formulair</h1>
+  <p class="tagline">A perfumery formulation notebook for Windows and Android.</p>
+
+  <p>
+    Formulair keeps a library of raw materials and the formulas built from
+    them. It does the arithmetic a perfumer actually needs: scaling a formula
+    by weight or by concentration, trading free solvent to change strength,
+    working out a dilution, and showing every formula a material has been used
+    in and at what level.
+  </p>
+
+  <h2>What it does</h2>
+  <div class="card">
+    <ul>
+      <li>Raw materials with categories, suppliers, dilutions, cost and IFRA limits.</li>
+      <li>Formulas in weight, with absolute and relative percentages side by side.</li>
+      <li>Six scaling operations, including concentration scaling against free solvent.</li>
+      <li>Accord nesting: replace one entry with a whole formula, in its own proportions.</li>
+      <li>Export to PDF, Markdown, TSV, and a CSV that imports back unchanged.</li>
+      <li>Optional sync through your own Google Drive.</li>
+    </ul>
+  </div>
+
+  <h2>Where your work lives</h2>
+  <p>
+    On your device. Formulair keeps your library in a single file, and it
+    works entirely offline. If you turn on Google Drive sync, that same file is
+    copied to <em>your</em> Drive so a second device can read it — nowhere
+    else, and never automatically. Sync happens when you press the button.
+  </p>
+
+  <h2>Privacy</h2>
+  <p>
+    Formulair has no servers, no accounts and no analytics. The only service it
+    ever contacts is Google, and only to sync the file you asked it to sync.
+    The full details are in the <a href="privacy.html">privacy policy</a>.
+  </p>
+
+  <footer>
+    A personal project. Not affiliated with Google.
+  </footer>
+</main>
+</body>
+</html>
